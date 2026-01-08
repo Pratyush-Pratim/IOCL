@@ -75,4 +75,4 @@ Create `.env` files in `backend/` and `chatbot/` as needed (already ignored in .
 
 ## Contributing
 
-Please follow the project structure and commit conventions.
+Please follow the project structure and commit conventions. ::
