@@ -1,13 +1,136 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body {
+    min-height: 100vh;
+    background-color: rgb(248, 245, 255);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#root{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    font-size: 18px;
+    font-family: Google Sans;
+    font-weight: 500;
+    color: rgb(248, 245, 255);      
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+
+
+.container {
+    background-color: rgb(26, 23, 59);
+    padding: 40px;
+    border-radius: 12px;
+    width: 75vh;
+    height: auto;
+    min-height: 60vh;
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+.container > h1 {
+    font-size: 38px;
+    margin-bottom: 30px;
+    color: rgb(248, 245, 255);
+    font-weight: 700;
+    font-family: Nunito sans;
+}
+
+.container > form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px; 
+}
+
+.container form > div {
+    display: flex;
+    flex-direction: column;
+    /* padding-bottom: 5px; */
+    border-bottom: 1.3px solid #ccc; 
+}
+
+.container input {
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+    color: rgb(248, 245, 255);
+    caret-color: white;
+}
+
+.container input::placeholder {
+    font-size: 15px;
+    font-family: Montserrat;
+}
+
+button {
+    border: none;
+    background-color: rgba(248, 245, 255,0.9);
+    font-size: 20px;
+    color: rgb(41, 36, 74);
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color:rgb(186, 176, 224);
+    transform: scale(1.02);
+    color: rgb(41, 36, 74);
+}
+
+.container span {
+    display: block;
+    font-family: montserrat;
+    text-align: center;
+    font-size: 15px;
+    color: #939393;
+}
+
+.container span a {
+    color: rgb(217, 206, 253);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.container span a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 480px) {
+    body {
+        align-items: center; 
+    }
+
+    .container {
+        padding: 30px 20px;
+        width: 95%;
+    }
+
+    .container > h1 {
+        font-size: 28px;
+    }
 }

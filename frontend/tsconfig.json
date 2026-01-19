@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* 1. Hybrid Project Support */
+    "allowJs": true,                   /* Allows .js and .jsx files to exist in the project */
+    "checkJs": false,                  /* Prevents TypeScript from flagging errors in your JS files */
+    "jsx": "react-jsx",                /* Support for React 17+ and 18+ JSX transform */
+    "incremental": true,               /* Speeds up subsequent builds */
+
+    /* 2. Environment & Standards */
+    "target": "ESNext",                /* Compiles to modern JavaScript */
+    "module": "ESNext",                /* Uses modern ESM import/export syntax */
+    "moduleResolution": "node",        /* Standard way to find packages in node_modules */
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    
+    /* 3. Strictness (Adjusted for Integration) */
+    "strict": false,                   /* Set to false to prevent errors during the merge */
+    "noImplicitAny": false,            /* Won't complain if a variable doesn't have a type */
+    "skipLibCheck": true,              /* Ignores type errors in external libraries */
+    "forceConsistentCasingInFileNames": true,
+
+    /* 4. Interoperability */
+    "esModuleInterop": true,           /* Fixes common import issues (e.g., importing CommonJS) */
+    "allowSyntheticDefaultImports": true, 
+    "resolveJsonModule": true,         /* Allows you to import .json files */
+    "isolatedModules": true,           /* Required by Vite and most modern bundlers */
+    "noEmit": true                     /* Tells TS not to output files (Vite/Babel handles that) */
+  },
+  "include": [
+    "src",                             /* Looks for all files in your src folder */
+    "frontend/src"                     /* Ensures it catches your frontend subdirectory */
+  ],
+  "exclude": [
+    "node_modules", 
+    "dist"
+  ]
+}
