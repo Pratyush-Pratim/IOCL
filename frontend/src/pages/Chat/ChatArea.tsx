@@ -31,7 +31,7 @@ function ChatArea({ messages, pendingMessage, setPendingMessage, onSubmit, hasMe
                 <span>{message}</span>
               </div>
             );
-          })}
+          })}x
         </div>
       )}
 
